@@ -1,0 +1,1 @@
+clang++ Brain.cpp Human.cpp main.cpp -o ex05 && ./ex05
