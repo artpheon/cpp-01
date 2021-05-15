@@ -1,0 +1,1 @@
+clang++ Logger.cpp main.cpp -o ex09 && ./ex09
