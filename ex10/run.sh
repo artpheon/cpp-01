@@ -1,0 +1,1 @@
+rm -rf cat9 ; clang++ Cat9.cpp main.cpp -o cat9
