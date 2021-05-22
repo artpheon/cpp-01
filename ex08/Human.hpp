@@ -6,12 +6,14 @@
 class Human {
     private:
         std::string _name;
-        const std::string& _getName();
         void meleeAttack(std::string const & target);
         void rangedAttack(std::string const & target);
         void intimidatingShout(std::string const & target);
-        void (Human::*f[3])(std::string const & target);
+        typedef void (Human::*_fAction)(std::string const & target);
+        _fAction _actions[3];
+        std::string _actionsStr[3];
     public:
+        const std::string& getName();
         Human(const std::string& name);
         ~Human();
         void action(std::string const & action_name, std::string const & target);

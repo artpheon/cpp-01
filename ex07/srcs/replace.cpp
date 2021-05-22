@@ -40,7 +40,6 @@ void Replace::replace() {
 
 int Replace::fill_output() {
     std::ofstream out;
-    size_t index = 0;
 
     out.open(this->_filename + ".replace");
     if (!out.is_open())

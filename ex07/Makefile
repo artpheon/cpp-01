@@ -2,7 +2,7 @@ NAME	= replace
 SRC		= main.cpp \
 		$(addprefix ./srcs/, replace.cpp)
 OBS		= $(SRC:.cpp=.o)
-FLAGS	= -Wall -Wextra -Werror
+FLAGS	= -Wall -Wextra -Wno-unused -Werror
 INC		= -I./headers
 HED		= ./headers/replace.hpp
 CC		= clang++
